@@ -1,5 +1,5 @@
 body {
-    font-family: 'Montserrat', sans-serif;
+    
     color: #777777;
     background: url("../images/outerspace.png");
     display: block;
@@ -25,25 +25,26 @@ body {
 }
 
 h3 {
-    color: orange;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 48px;   
+    color: rgba(238, 255, 0, 0.616);
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 48px;  
+    text-align: center;
 }
 
 #remaining {
     color:red;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Luckiest Guy', cursive;;
     font-size: 48px;
 }
 
 #guesses {
     color:red;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Luckiest Guy', cursive;
     font-size: 48px;
 }
 
 #wordToGuess {
     color:red;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Luckiest Guy', cursive;
     font-size: 48px;
 }
