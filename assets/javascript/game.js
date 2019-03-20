@@ -30,6 +30,10 @@ document.onkeyup = function(event) {
     console.log("Guessed letters: " + guessedLetters);
     console.log("Remaining guesses: " + remainingGuesses);
 
+    document.getElementById("remaining").innerHTML = remainingGuesses;
+    document.getElementById("guesses").innerHTML = guessedLetters;
+    
+
     // If the word contains the guessed letter, update the selectedWord array to replace the underscore with the letter
     for (var j = 0; j < word.length; j++){
     if (word[j] === guess){
@@ -37,8 +41,10 @@ document.onkeyup = function(event) {
     }else {
         
     }
-
+    document.getElementById("wordToGuess").innerHTML = selectedWord;
     }
+
+    
     console.log(selectedWord);
     
 }

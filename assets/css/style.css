@@ -5,3 +5,15 @@
 #rules {
     color: blue;
 }
+
+#remaining {
+    color: orange;
+}
+
+#guesses {
+    color: brown;
+}
+
+#wordToGuess {
+    color: gray;
+}
