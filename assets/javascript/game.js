@@ -7,6 +7,9 @@ var remainingGuesses = 10;
 var wins = 0;
 var guessedLetters = [];
 
+document.getElementById("remaining").innerHTML = remainingGuesses;
+document.getElementById("guesses").innerHTML = guessedLetters;
+
 // Assigns a randomly selected word from 'wordlist' array to the 'word' variable
 var word = wordlist[Math.floor(Math.random()*wordlist.length)];
 console.log(word);
@@ -17,6 +20,7 @@ for (var i = 0; i < word.length; i++) {
     selectedWord[i] = "_ ";
 }
 console.log(selectedWord);
+document.getElementById("wordToGuess").innerHTML = selectedWord;
 
 // Captures keyboard input from the player
 document.onkeyup = function(event) {
@@ -29,9 +33,10 @@ document.onkeyup = function(event) {
     console.log("You guessed: " + guess);
     console.log("Guessed letters: " + guessedLetters);
     console.log("Remaining guesses: " + remainingGuesses);
-
+    
     document.getElementById("remaining").innerHTML = remainingGuesses;
     document.getElementById("guesses").innerHTML = guessedLetters;
+
     
 
     // If the word contains the guessed letter, update the selectedWord array to replace the underscore with the letter
@@ -41,9 +46,8 @@ document.onkeyup = function(event) {
     }else {
         
     }
-    document.getElementById("wordToGuess").innerHTML = selectedWord;
     }
-
+    document.getElementById("wordToGuess").innerHTML = selectedWord;
     
     console.log(selectedWord);
     

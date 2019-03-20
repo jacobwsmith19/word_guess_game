@@ -1,19 +1,49 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #777777;
+    background: url("../images/outerspace.png");
+    display: block;
+}
+
 .title {
-    color: green;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 96px;
+    background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+    background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-align: center;
 }
 
 #rules {
-    color: blue;
+    color: rgba(240, 167, 10, 0.473);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+h3 {
+    color: orange;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;   
 }
 
 #remaining {
-    color: orange;
+    color:red;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
 }
 
 #guesses {
-    color: brown;
+    color:red;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
 }
 
 #wordToGuess {
-    color: gray;
+    color:red;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
 }
