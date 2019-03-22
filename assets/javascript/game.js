@@ -16,6 +16,7 @@ var playing = false;
 var word = '';
 var selectedWord = [];
 
+
 // Captures keyboard input from the player
 document.onkeyup = function(event) {
     
@@ -65,6 +66,7 @@ document.onkeyup = function(event) {
                 alert("You win!");
                 wins++;
                 console.log(wins);
+                document.getElementById("wins").innerHTML = wins;
                 reset();
             }
         }
