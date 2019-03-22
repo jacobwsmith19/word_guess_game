@@ -48,3 +48,7 @@ h3 {
     font-family: 'Luckiest Guy', cursive;
     font-size: 48px;
 }
+
+#playarea{
+    display: none;
+}
