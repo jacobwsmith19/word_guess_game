@@ -47,10 +47,14 @@ document.onkeyup = function(event) {
         
     }
     }
-    document.getElementById("wordToGuess").innerHTML = selectedWord.join(" ");
     
+    document.getElementById("wordToGuess").innerHTML = selectedWord.join(" ");
     console.log(selectedWord.join(" "));
     
+    // Alerts player they lost if remaining guesses = 0
+    if (remainingGuesses === 0){
+        alert("You lose!");
+    }
 }
 
 
