@@ -1,9 +1,3 @@
-// TODO:
-// reset game function
-// hide playing area on refresh !!
-// ignore same letter guesses + numbers + symbols !!
-
-
 // Array of words the computer will randomly select from
 var wordlist = ["mercury", "venus", "earth", "mars", "saturn", "jupiter", "uranus", "neptune", "pluto"];
 
@@ -73,7 +67,7 @@ document.onkeyup = function(event) {
     }
 }
 
-
+// Reset function for win or loss
 function reset(){
     remainingGuesses = 10;
     guessedLetters = [];
