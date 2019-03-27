@@ -36,7 +36,7 @@ document.onkeyup = function(event) {
             console.log("Remaining guesses: " + remainingGuesses);
             
             document.getElementById("remaining").innerHTML = remainingGuesses;
-            document.getElementById("guesses").innerHTML = guessedLetters.join(" ");
+            document.getElementById("guesses").innerHTML = guessedLetters.sort().join(" ");
         
             
         
